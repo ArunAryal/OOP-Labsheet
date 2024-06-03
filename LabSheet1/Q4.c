@@ -7,6 +7,7 @@ typedef struct student{
 } st;
 
 #include<stdio.h>
+#include<string.h>
 # define max 50
 
 void input(int num,st *rec){
@@ -25,7 +26,20 @@ void input(int num,st *rec){
 }
 
 void arrange(int num,st *rec){
-    printf("This is arrange function\n");
+    char temp[25];
+    // printf("This is arrange function\n");
+    for (int i=0;i<num;i++)
+    {
+        for (int j=i+1; j<num; j++)
+        {
+            if (strcmp((rec+i)->name,(rec+j)->name)>0)
+            {
+                strcpy(temp,(rec+i)->name);
+                strcpy((rec+i)->name,(rec+j)->name);
+                strcpy((rec+j)->name,temp);
+            }
+        }
+    }	
 }
 
 void display(int num,st *rec){
