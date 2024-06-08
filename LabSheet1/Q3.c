@@ -11,7 +11,7 @@ void input(int num, st *rec){
     for (int i = 0; i < num; i++)
     {
         printf("Enter the name of student:\t\t\t");
-        scanf("%s",&rec[i].name);
+        scanf("%s",rec[i].name);
         printf("Enter the marks of student in C programming:\t");
         scanf("%f",&rec[i].marks);
     }
