@@ -4,26 +4,27 @@
 using namespace std;
 
 void converter(){
-    int a=20;
+    float a=20.8;
     cout<<"From no argument function,"<<endl;
     cout<<a<<" Feet = "<<a*12<<" inches"<<endl<<endl;
 }
 
-void converter(int a){
+void converter(float a){
     cout<<"From 1 argument function,"<<endl;
     cout<<a<<" Feet = "<<a*12<<" inches"<<endl<<endl;
 }
 
-void converter(int a, int& b){
+void converter(float a, float& b){
     cout<<"From 2 argument function,"<<endl;
     cout<<a<<" Feet = "<<a*12<<" inches"<<endl;
-    cout<<b<<" Feet = "<<b*12<<" inches"<<endl<<endl;
+    b=b*12;
 }
 
 int main() {
-    int x=10, y=15;
+    float x=10.3, y=15.6, y1=y;
     converter();
     converter(x);
     converter(x,y);
+    cout<<y1<<" Feet = "<<y<<" inches"<<endl<<endl;
     return 0;
 }
