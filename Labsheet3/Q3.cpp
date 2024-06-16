@@ -10,12 +10,12 @@ class carpark{
 
     void getData(){
         cout<<"Enter car Id\t";
-        cin>>carId
+        cin>>carId;
     }
-}
+};
 
 
 int main() {
-    
+    int a;
     return 0;
 }
