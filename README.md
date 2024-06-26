@@ -56,9 +56,6 @@ If you would like to contribute to this repository, please follow these steps:
 - Commit and push your changes to the new branch.
 - Open a pull request and describe the changes you have made.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE]() file for more details.
 
 ## Contact
 
